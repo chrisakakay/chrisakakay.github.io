@@ -1,0 +1,29 @@
+body {
+    background-image: -webkit-linear-gradient(rgba(22, 14, 35, 1.0), rgba(22, 14, 35, 0.75)), url(../../images/background.jpg);
+}
+
+a, .highlight {
+    color: #6fffdb;
+}
+
+#header .container .menu-logo span {
+    color: white;
+    background-color: #6fffdb;
+}
+
+#header.secondary {
+    /* background-color: #f60043; */
+    background-color: rgba(111, 255, 219, 0.75);
+}
+
+#header.secondary .container .menu-logo span {
+    background-color: #1a182a;
+}
+
+#header.secondary .container .menu-logo:hover span {
+    color: #6fffdb;
+}
+
+#content .container .profile {
+    border: 2px solid #6fffdb;
+}
