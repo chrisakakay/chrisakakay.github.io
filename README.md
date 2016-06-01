@@ -1,3 +1,3 @@
 # chrisakakay.github.io
 
-Personal website
+Personal website and stuff
