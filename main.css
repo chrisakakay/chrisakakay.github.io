@@ -1,5 +1,5 @@
 body {
-    background-color: #212121;
+    background-color: #131415;
     margin: 0;
     padding: 0;
     font: 13px/18px 'Open Sans', serif;
@@ -16,21 +16,30 @@ a {
     font-weight: bold;
 }
 
+a span {
+    color: #757575;
+}
+
+.funny-me {
+    float: left;
+    width: 300px;
+}
+
 #content {
-    width: 680px;
+    width: 760px;
     margin: 120px auto;
 }
 
 .data {
-    width: 360px;
+    width: 400px;
     float: right;
 }
 
 h2 {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
     color: #ECEFF1;
-    margin: 14px 0;
+    margin: 10px 0;
 }
 
 .heading {
