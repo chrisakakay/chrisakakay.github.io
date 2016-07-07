@@ -25,6 +25,11 @@ a span {
     width: 300px;
 }
 
+.left-box {
+    float:left;
+    widt: 300px;
+}
+
 #content {
     width: 760px;
     margin: 120px auto;
@@ -33,6 +38,10 @@ a span {
 .data {
     width: 400px;
     float: right;
+}
+
+.contact {
+    padding: 30px;
 }
 
 h2 {
@@ -44,6 +53,7 @@ h2 {
 
 .heading {
     margin-bottom: 24px;
+    margin-top: 24px;
 }
 
 .part {
