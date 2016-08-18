@@ -25,6 +25,12 @@ a span {
     margin: 120px auto;
 }
 
+#content:after {
+    clear: both;
+    content: " ";
+    display: block;
+}
+
 .left-box {
     width: 500px;
     float: left;
