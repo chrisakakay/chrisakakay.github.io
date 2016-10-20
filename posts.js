@@ -48,7 +48,7 @@ function processParams() {
 
 $(function () {
     if (params.postId) {
-        $.get('/posts/'+ postId + '.md').done(function (response) {
+        $.get('/posts/'+ params.postId + '.md').done(function (response) {
             $('#content').append(converter.makeHtml(response));
         });
     } else {
