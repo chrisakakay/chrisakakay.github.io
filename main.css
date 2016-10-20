@@ -72,16 +72,21 @@ a i {
     margin-right: 0;
 }
 
-#content {
-    box-sizing: border-box;
-    padding: 60px;
+#content-container {
     position: absolute;
     left: 480px;
     width: calc(100% - 480px);
-    max-width: 700px;
+    height: 100%;
+    overflow-y: scroll;
 
     -webkit-transition: left 0.3s, top 0.3s;
     transition: left 0.3s, top 0.53;
+}
+
+#content {
+    box-sizing: border-box;
+    padding: 60px;
+    max-width: 700px;
 }
 
 #content > div {
@@ -106,16 +111,24 @@ a i {
     font-size: 14px;
 }
 
+body #disqus_thread {
+    margin: 100px 0 0 0;
+}
+
 @media (max-width: 990px) {
     .sidebar {
         width: 100%;
         height: 300px;
     }
 
-    #content {
+    #content-container {
         left: 0;
         top: 300px;
         width: 100%;
+        max-width: 100%;
+    }
+
+    #content {
         max-width: 100%;
     }
 }
@@ -125,7 +138,7 @@ a i {
         width: 380px;
     }
 
-    #content {
+    #content-container {
         left: 380px;
         width: calc(100% - 380px);
         max-width: 600px;
