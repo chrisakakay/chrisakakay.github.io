@@ -7,57 +7,36 @@
         <meta name="description" content="Krisztian Nagy's personal webpage">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+        <script src="https://use.fontawesome.com/bd27fb3423.js"></script>
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <div id="content">
-            <div class="left-box">
-                <div>
-                    <h2>Hello! I'm Krisztian.</h2>
-                    <h2>I'm a frontend developer.</h2>
-                </div>
-
-                <div class="b-border">
-                    For me, web developement always meant more than just a job. Starting with RoR as a full stack opportunity and diving into the frontend javascript mistery drove me to be intrested in javascript even more. <br/><br/>
-                    <img src="images/epam-logo.png" class="logo" />
-                    Currently working as a senior frontend developer at EPAM Hungary. We believe in clean and high quality code born on the altar of test driven development.
-                </div>
-
-                <div class="b-border">
-                    <img src="images/viveka-logo.png" class="logo" />
-                    Viveka was born as a proof of concept project and aimed to do better visual regression as the currently existing solutions. <br/><br/>
-                    The system was designed around a new layer above the perceptual image differencing, achieving it with DOM analyzation.<br/><br/>
-
-                    The project is not longer maintained, but the repository is still available
-                    <a href="https://github.com/viveka-io/viveka" target="_blank" class="link">here</a>.<br/><br/>
-                </div>
-
-                <div>
-                    <img src="images/linden-gray.png" class="logo" />
-                    Linden is visual regression tool based on Viveka (because i think the concept app was a success). However the application design is different, using an other approach and it's we are building it as a console tool instead of a website.<br/><br/>
-                    It's available <a href="https://github.com/chrisakakay/linden" target="_blank" class="link">here</a>.<br/><br/>
-                    I warmly welcome every contributor or anyone who is interested in it.<br/><br/>
-                    (The icon is temporary and made by Darius Dan)
-                </div>
-            </div>
-
-            <div class="right-box">
-                <div>
-                    <h3>Contact</h3>
-                    Add me on <a href="https://facebook.com/chrisakakay" target="_blank">FACEBOOK</a><br/>
-                    Check my code on <a href="https://github.com/chrisakakay" target="_blank">GITHUB</a><br/>
-                    Read my profile on <a href="https://linkedin.com/in/chrisakakay" target="_blank">LINKEDIN</a><br/>
-                    Mail me to <a href="mailto:chrisakakay@gmail.com" target="_blank">chrisakakay@gmail.com</a><br/>
-                </div>
-
-                <div>
-                    <h3>Downloads and links</h3>
-                    <a href="./downloads/Krisztian_Nagy_CV.pdf" target="_blank" class="link">Curriculum Vitae <span>(EN, 2016-06)</span></a>
-                    <a href="./downloads/visual_regression_kn_EN.pptx" target="_blank" class="link">Visual Regression Presentation <span>(EN)</span></a>
-                    <a href="./downloads/visual_regression_kn_HU.pptx" target="_blank" class="link">Visual Regression Presentation <span>(HU)</span></a>
-                    <a href="/frontend/index.html" class="link">So you want to be a frontend developer?</a>
-                </div>
+        <div class="sidebar">
+            <div class="sidebar-content">
+                <p class="name">Krisztian Nagy</p>
+                <p class="role">Frontend Developer</p>
+                <p class="description">
+                    I work at
+                    <a href="https://www.epam.com/" target="_blank">EPAM Hungary</a>
+                    as a senior frontend developer and i help to shape
+                    <a href="https://www.hotels.com/" target="_blank">Hotels</a>.
+                    I also like to use React and I'm a hobbyist game developer (Unity3D).
+                </p>
+                <p class="contact">
+                    <a href="https://github.com/chrisakakay" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+                    <a href="https://linkedin.com/in/chrisakakay" target="_blank"><i class="fa fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    <a href="https://facebook.com/chrisakakay" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/chrisakakay" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="mailto:chrisakakay@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                </p>
             </div>
         </div>
+
+        <div id="content"></div>
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+        <script src="posts.js"></script>
     </body>
 </html>

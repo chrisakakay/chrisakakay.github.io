@@ -1,72 +1,133 @@
 body {
-    background-color: #131415;
+    background-color: #f7faff;
+    color: #212121;
     margin: 0;
     padding: 0;
     font: 13px/18px 'Open Sans', serif;
     letter-spacing: 0.2px;
-    color: #9E9E9E;
     text-shadow: rgba(0,0,0,.01) 0 0 1px;
 }
 
 a {
     text-decoration: none;
+    color: #1ce5b1;
     outline: none;
     display: inline-block;
-    color: #FAFAFA;
     font-weight: bold;
 }
 
-a span {
-    color: #9E9E9E;
+a i {
+    color: white;
+}
+
+.sidebar {
+    background: url('./noir.jpg');
+    width: 480px;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    color: #FAFAFA;
+
+     -webkit-transition: width 0.3s, height 0.3s;
+    transition: width 0.3s, height 0.53;
+}
+
+.sidebar-content {
+    padding: 40px 60px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sidebar-content p {
+    text-align: center;
+    margin: 0;
+}
+
+.sidebar-content i {
+    font-size: 18px;
+}
+
+.sidebar-content p.name {
+    font-size: 32px;
+    line-height: 1.2em;
+}
+
+.sidebar-content p.role {
+    text-transform: uppercase;
+    color: #E0E0E0;
+}
+
+.sidebar-content p.description, .sidebar-content p.contact {
+    margin-top: 20px;
+}
+
+.sidebar-content p.contact a {
+    margin-right: 5px;
+}
+
+.sidebar-content p.contact a:last {
+    margin-right: 0;
 }
 
 #content {
-    width: 900px;
-    margin: 120px auto;
+    box-sizing: border-box;
+    padding: 60px;
+    position: absolute;
+    left: 480px;
+    width: calc(100% - 480px);
+    max-width: 700px;
+
+    -webkit-transition: left 0.3s, top 0.3s;
+    transition: left 0.3s, top 0.53;
 }
 
-#content:after {
-    clear: both;
-    content: " ";
-    display: block;
+#content > div {
+    margin-bottom: 80px;
 }
 
-.left-box {
-    width: 500px;
-    float: left;
+#content > div p.date {
+    color: #212121;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 0 5px 0;
 }
 
-.right-box {
-    float: right;
-    width: 320px;
+#content > div a.title {
+    color: #212121;
+    font-size: 28px;
 }
 
-.left-box > div, .right-box > div {
-    padding: 30px 0;
+#content > div p.desc {
+    color: #757575;
+    font-size: 14px;
 }
 
-h2 {
-    font-weight: 400;
-    font-size: 20px;
-    color: #ECEFF1;
-    margin: 10px 0;
+@media (max-width: 990px) {
+    .sidebar {
+        width: 100%;
+        height: 300px;
+    }
+
+    #content {
+        left: 0;
+        top: 300px;
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
-h3 {
-    font-weight: 400;
-    font-size: 16px;
-    color: #ECEFF1;
-    margin: 10px 0;
-}
+@media (min-width: 991px) and (max-width: 1200px) {
+    .sidebar {
+        width: 380px;
+    }
 
-.b-border {
-    border-bottom: 1px solid #28282a;
-}
-
-.logo {
-    width: 80px;
-    float: right;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    margin: 0 14px 0 20px;
+    #content {
+        left: 380px;
+        width: calc(100% - 380px);
+        max-width: 600px;
+    }
 }
