@@ -24,7 +24,8 @@ var postTemplate = [
     '</div>'
 ];
 
-var params = processParams();
+var params      = processParams();
+var converter   = new showdown.Converter()
 
 function formatDate(dateString) {
     var d = new Date(dateString);
@@ -45,9 +46,15 @@ function processParams() {
     return params;
 }
 
+,
+    text      = '#hello, markdown!',
+    html      = converter.makeHtml(text);
+
 $(function () {
     if (params.postId) {
-
+        $.get('/posts/'+ postId + '.md').done(function (response) {
+            $('#content').append(converter.makeHtml(response));
+        });
     } else {
         posts.forEach(function (post) {
             var template = postTemplate.join('');
