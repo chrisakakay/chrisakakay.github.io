@@ -126,6 +126,7 @@ body #disqus_thread {
         top: 300px;
         width: 100%;
         max-width: 100%;
+        overflow-y: hidden;
     }
 
     #content {
@@ -141,6 +142,5 @@ body #disqus_thread {
     #content-container {
         left: 380px;
         width: calc(100% - 380px);
-        max-width: 600px;
     }
 }
