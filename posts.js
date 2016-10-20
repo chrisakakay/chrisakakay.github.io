@@ -3,7 +3,7 @@ var posts = [
             date: '2016-10-21',
             shortUrl: 'up-to-date',
             title: 'Up to date with JavaScript',
-            desc: 'TODO'
+            desc: 'I decided my first post will not be tech related. I mean it won\'t contain any code, but the topic is heavily tech related.'
         },
         {
             date: '2016-10-20',
