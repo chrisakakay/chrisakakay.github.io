@@ -46,10 +46,6 @@ function processParams() {
     return params;
 }
 
-,
-    text      = '#hello, markdown!',
-    html      = converter.makeHtml(text);
-
 $(function () {
     if (params.postId) {
         $.get('/posts/'+ postId + '.md').done(function (response) {
