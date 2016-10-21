@@ -104,6 +104,7 @@ a i {
 #content > div a.title {
     color: #212121;
     font-size: 28px;
+    line-height: 28px;
 }
 
 #content > div p.desc {
@@ -127,11 +128,12 @@ body #disqus_thread {
         width: 100%;
         max-width: 100%;
         overflow-y: hidden;
+        height: auto;
     }
 
     #content {
         max-width: 100%;
-        height: auto;
+        padding: 30px;
     }
 }
 
