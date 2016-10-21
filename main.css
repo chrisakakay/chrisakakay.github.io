@@ -131,6 +131,7 @@ body #disqus_thread {
 
     #content {
         max-width: 100%;
+        height: auto;
     }
 }
 
