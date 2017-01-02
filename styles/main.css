@@ -14,10 +14,7 @@ a {
     outline: none;
     display: inline-block;
     font-weight: bold;
-}
-
-a i {
-    color: white;
+    transition: color 0.2s ease;
 }
 
 #home {
@@ -35,7 +32,7 @@ a i {
 }
 
 .sidebar {
-    background: url('./noir.jpg');
+    background: url('../images/noir.jpg');
     width: 480px;
     height: 100%;
     position: absolute;
@@ -61,7 +58,13 @@ a i {
 }
 
 .sidebar-content i {
-    font-size: 18px;
+    color: white;
+    transition: color 0.2s ease;
+    font-size: 28px;
+}
+
+.sidebar-content i:hover {
+    color: #1ce5b1;
 }
 
 .sidebar-content p.name {
@@ -75,7 +78,11 @@ a i {
 }
 
 .sidebar-content p.description, .sidebar-content p.contact {
-    margin-top: 20px;
+    margin-top: 30px;
+}
+
+.sidebar-content p.contact {
+    line-height: 38px;
 }
 
 .sidebar-content p.contact a {
@@ -124,6 +131,11 @@ a i {
 #content > div p.desc {
     color: #757575;
     font-size: 14px;
+}
+
+.cc {
+    font-size: 10px;
+    line-height: 10px;
 }
 
 body #disqus_thread {

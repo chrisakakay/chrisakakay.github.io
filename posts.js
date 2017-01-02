@@ -19,19 +19,10 @@ var posts = [
         }
     ];
 
-var postsTemplate = [
-    '<div>',
-        '<p class="date">DATE</p>',
-        '<a href="?postId=SHORT" class="title">TITLE</a>',
-        '<p class="desc">DESCRIPTION</p>',
-        '<a href="?postId=SHORT" class="more">READ MORE</a>',
-    '</div>'
-];
-
-$(function () {
-    Crystalline.init({
-        posts: posts,
-        postsTemplate: postsTemplate,
-        container: $('#content')
-    });
+Crystalline.init({
+    posts: posts,
+    disqus: {
+        pageUrl: 'http://chrisakakay.github.io',
+        disqusId: 'krisztian-nagy'
+    }
 });
