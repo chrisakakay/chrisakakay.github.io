@@ -2,8 +2,8 @@ var posts = [
         {
             date: '2017-01-17',
             short: 'node-hosting',
-            title: 'NodeJS hosting on ubuntu with nginx and pm2',
-            desc: 'A small tutorial on node hosting. Simple setup for ubuntu and nginx.'
+            title: 'NodeJS hosting',
+            desc: 'Ubuntu + nginx + pm2 for simple node hosting'
         },        
         {
             date: '2017-01-02',
