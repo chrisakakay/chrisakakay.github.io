@@ -29,7 +29,7 @@ pm2 startup systemd
 Open a new configuration file
 
 ``` bash
-sudo vim /etc/nginx/sites-available/our-project
+sudo vim /etc/nginx/sites-available/ex
 ```
 
 Add:
@@ -53,7 +53,7 @@ server {
 Enable the new configuration
 
 ``` bash
-sudo ln -s /etc/nginx/sites-available/our-project /etc/nginx/sites-enabled/our-project
+sudo ln -s /etc/nginx/sites-available/ex /etc/nginx/sites-enabled/ex
 ```
 
 Restart nginx
