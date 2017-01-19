@@ -4,7 +4,7 @@ var posts = [
             short: 'node-hosting',
             title: 'NodeJS hosting',
             desc: 'Ubuntu + nginx + pm2 for simple node hosting'
-        },        
+        },
         {
             date: '2017-01-02',
             short: 'unity-ragdoll',
