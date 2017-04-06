@@ -18,6 +18,10 @@ var projects = [
         {
             owner: 'chrisakakay',
             name: 'is-not-empty'
+        },
+        {
+            owner: 'chrisakakay',
+            name: 'node-cli-skeleton'    
         }
     ];
 var projectTemplate = [
