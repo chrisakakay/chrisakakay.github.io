@@ -3,7 +3,7 @@ var posts = [
             date: '2017-04-27',
             short: 'moving-forward',
             title: 'Moving forward',
-            desc: 'Chaning company, etc ..'
+            desc: 'Changing company, etc ..'
         },
         {
             date: '2017-01-17',
