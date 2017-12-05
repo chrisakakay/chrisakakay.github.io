@@ -1,0 +1,65 @@
+html, body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  padding: 0;
+  font-size: 16px;
+  margin: 0;
+  color: #212121;
+  background-color: #FAFAFA;
+}
+
+body {
+  padding: 100px 0 0 0;
+}
+
+#members > div {
+  width: 200px;
+  margin: 0 auto;
+  padding: 5px 10px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 400;
+  position: relative;
+}
+
+#members > div.picked {
+  text-decoration: line-through;
+  color: #FFD600;
+}
+
+#members > div.off {
+  text-decoration: line-through;
+  color: #0091EA;
+}
+
+#members > div.not-picked:hover {
+  background-color: #1ce5b1;
+}
+
+#members > div.picked:hover {
+  background-color: #FFD600;
+  text-decoration: none;
+}
+
+#members > div.off:hover {
+  background-color: #0091EA;
+}
+
+#members > div:hover {
+  color: white;
+  border-radius: 3px;
+}
+
+#members > div > span {
+  display: none;
+  border-radius: 2px;
+  position: absolute;
+  right: 5px;
+  background-color: #212121;
+  padding: 3px 5px;
+  font-size: 10px;
+}
+
+#members > div.not-picked:hover > span {
+  display: inline-block;
+}
