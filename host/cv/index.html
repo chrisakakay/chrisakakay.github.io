@@ -2,11 +2,60 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Krisztan Nagy CV</title>
+        <title>Krisztian Nagy CV</title>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
         <link rel="stylesheet" href="brandico.css">
         <link rel="stylesheet" href="style.css">
+        <style type="text/css">
+            body { margin: 0; padding: 0; background: linear-gradient(to right, #17181d 50%, #f5f5f5 50%); }
+            * { font-family: 'Open Sans', sans-serif; color: #333; letter-spacing: 0.5px; }
+            .material-icons { font-size: 14px; padding: 5px; }
+            .material-icons.md-light { color: rgba(255, 255, 255, 1); }
+
+            .container { width: 790px; margin: 0 auto; }
+
+            .icon-container { background-color: #139cca; border-radius: 20px; width: 24px; height: 24px; float:left; margin-right: 10px;}
+            .side { float: left; height: 1000px; padding: 60px 40px; }
+
+            #left-side { background-color: #17181d; width: 245px; }
+            #right-side { background-color: #f5f5f5; width: 385px; }
+            #right-side p { margin: 0 0 0 35px; font-size: 12px; }
+
+            .blue { color: #139cca; }
+            .gray { color: #7a7677; }
+            .soft-gray { color: #e6e4e9; }
+
+            h3 { font-weight: 600; font-size: 16px; margin-top: 55px; clear: both; }
+            h4 { font-weight: 600; font-size: 14px; margin: 10px 0 0 35px; }
+
+            .name { text-align: center; margin: 25px 0 0 0; font-size: 16px; letter-spacing: 2.5px; }
+            .title { text-align: center; margin: 0; font-size: 11px; }
+            .city { text-align: center; margin: 5px 0 0 15px; font-size: 11px; }
+            .pin { position: absolute; margin-left: 55px; font-size: 18px; }
+            .header { font-size: 14px; margin-top: 50px;}
+            .about { font-size: 12px; text-align: justify; }
+            .personal-skills { font-size: 12px; }
+            .contact-icon { position: absolute; font-size: 18px; margin-left: -5px; }
+            .contact-icon-small { position: absolute; font-size: 14px; padding: 4px; margin-left: -5px; }
+            .contact-cont { width: 100%; }
+            .contact { font-size: 12px; margin: 10px 0 4px 30px; }
+
+            #profile-pic { width: 110px; border: 1px solid white; border-radius: 50%; display: block; margin: auto;
+                -webkit-filter: grayscale(100%); background-color: #fff; margin-top: 70px; }
+
+            ul { padding: 0; margin-left: 11px; list-style: none}
+            li { padding-left: 23px; border-left: 1px solid rgba(0,0,0, 0.1); padding-bottom: 20px; }
+            li:before { content: ' '; width: 9px; height: 9px; background-color: #139cca; position: absolute; border-radius: 50%; margin-left: -30px;
+                border: 2px solid #eee; }
+            li:last-child { padding-bottom: 0; }
+            li span { display: block; padding: 1px 0; }
+            li span:first-child { padding-top: 0; }
+
+            .company { font-size: 14px; font-weight: 600; line-height: 14px;}
+            .position { font-size: 11px; line-height: 16px; }
+            .time-frame { font-size: 11px; line-height: 14px; }
+        </style>
     </head>
     <body>
         <div class="container">
@@ -18,30 +67,32 @@
                 <i class="material-icons blue pin">pin_drop</i> <p class="city soft-gray">Budapest, HU</p>
                 <p class="header soft-gray">ABOUT ME</p>
                 <p class="about soft-gray">
-                    I am a 28 years old front end developer with 7+ years of experience from sitebuilding
-                    to full stack development. I love to dive into new technologies and currenty i fancy these:
-                    React, Unity3D and Golang.
+                    I am a 29 years old front end developer with 8+ years of experience from sitebuilding
+                    to full stack development and a bit of team leading.
+                    <br/><br/>
+                    Currenty fancy these: React, Unity3D and Golang.
                 </p>
                 <p class="header soft-gray">PERSONAL SKILLS</p>
                 <p class="personal-skills soft-gray">
-                    Team player, excellent in communication, problem solver, enthusiastic mind. <br/><br/> A really kind techical interviewer.
+                    Team player, excellent in communication, problem solver, enthusiastic mind.
+                    <br/><br/>
+                    A really kind techical interviewer.
                 </p>
 
                 <p class="header soft-gray">CONTACT</p>
 
                 <i class="material-icons soft-gray contact-icon" style="margin-top: -5px">email</i><p class="contact soft-gray">chrisakakay@gmail.com</p>
-                <i class="material-icons soft-gray contact-icon">phone</i><p class="contact soft-gray">+36 70 5109515</p>
+                <i class="material-icons soft-gray contact-icon">phone</i><p class="contact soft-gray">+36705109515</p>
                 <i class="icon-skype soft-gray contact-icon-small"></i><p class="contact soft-gray">krisztian_nagy_1989</p>
                 <i class="icon-linkedin-rect soft-gray contact-icon-small"></i><p class="contact soft-gray">linkedin.com/in/chrisakakay</p>
                 <i class="icon-github soft-gray contact-icon-small"></i><p class="contact soft-gray">github.com/chrisakakay</p>
-                <i class="icon-facebook-rect soft-gray contact-icon-small"></i><p class="contact soft-gray">facebook.com/chrisakakay</p>
             </div>
             <div id="right-side" class="side">
                 <h3 class="blue"><span class="icon-container"><i class="material-icons md-light">work</i></span>WORK EXPERIENCE</h3>
                 <ul>
                     <li>
                         <span class="company">VODAFONE SHARED SERVICES BUDAPEST</span>
-                        <span class="position gray">AGILE FRONTEND DEVELOPER</span>
+                        <span class="position gray">SENIOR FRONTEND DEVELOPER</span>
                         <span class="time-frame">2017 APR -</span>
                     </li>
                     <li>
@@ -63,9 +114,9 @@
 
                 <h3 class="blue"><span class="icon-container"><i class="material-icons md-light">assessment</i></span>PROFESSIONAL SKILLS</h3>
                 <h4>Languages</h4>
-                <p class="list">HTML5, CSS3, JavaScript, Golang, Python, C#, Ruby, Java</p>
+                <p class="list">HTML5, CSS3, JavaScript, Golang, Ruby, Python, C#, Java</p>
                 <h4>Technologies</h4>
-                <p class="list">React, Node.js, jQuery, Electron, Vue, Meteor.js, Unity3D, Ruby on Rails, Selenium, Jasmine, Git, SCSS, SASS, Webpack, Gulp, Grunt</p>
+                <p class="list">React, Preact, Node.js, jQuery, Electron, Vue, Meteor.js, Unity3D, Ruby on Rails, Selenium, Jasmine, Mocha, Git (Github, Gitlab), SCSS/SASS, Webpack, Rollup, Parcel, Gulp, Grunt React Native</p>
                 <h4>Methodologies</h4>
                 <p class="list">Scrum, Agile, Kanban, TDD, BDD</p>
                 <h4>Others</h4>
