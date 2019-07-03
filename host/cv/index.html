@@ -3,48 +3,42 @@
     <head>
         <meta charset="UTF-8">
         <title>Krisztian Nagy CV</title>
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
         <link rel="stylesheet" href="brandico.css">
-        <link rel="stylesheet" href="style.css">
         <style type="text/css">
-            body { margin: 0; padding: 0; background: linear-gradient(to right, #17181d 50%, #f5f5f5 50%); }
+            body { margin: 0; padding: 0; background: white; color: #333;}
             * { font-family: 'Open Sans', sans-serif; color: #333; letter-spacing: 0.5px; }
             .material-icons { font-size: 14px; padding: 5px; }
-            .material-icons.md-light { color: rgba(255, 255, 255, 1); }
+            .material-icons.l { color: rgba(255, 255, 255, 1); }
 
-            .container { width: 790px; margin: 0 auto; }
+            .container { width: 790px; margin: 0 auto; height: 100vh; box-sizing: border-box; }
+            .side { float: left; height: 100vh; box-sizing: border-box; padding: 60px 40px; }
+            .side::after { content: ''; display: block; width: 100%; }
 
             .icon-container { background-color: #139cca; border-radius: 20px; width: 24px; height: 24px; float:left; margin-right: 10px;}
-            .side { float: left; height: 1000px; padding: 60px 40px; }
 
-            #left-side { background-color: #17181d; width: 245px; }
-            #right-side { background-color: #f5f5f5; width: 385px; }
+            #left-side { width: 40%; }
+            #right-side { width: 60%; }
             #right-side p { margin: 0 0 0 35px; font-size: 12px; }
 
-            .blue { color: #139cca; }
-            .gray { color: #7a7677; }
-            .soft-gray { color: #e6e4e9; }
-
-            h3 { font-weight: 600; font-size: 16px; margin-top: 55px; clear: both; }
+            h3 { font-weight: 600; font-size: 16px; margin-top: 55px; color: #139cca; }
             h4 { font-weight: 600; font-size: 14px; margin: 10px 0 0 35px; }
 
-            .name { text-align: center; margin: 25px 0 0 0; font-size: 16px; letter-spacing: 2.5px; }
+            .name { text-align: center; margin: 25px 0 0 0; font-size: 16px; font-weight: 600; letter-spacing: 2.5px; }
             .title { text-align: center; margin: 0; font-size: 11px; }
-            .city { text-align: center; margin: 5px 0 0 15px; font-size: 11px; }
-            .pin { position: absolute; margin-left: 55px; font-size: 18px; }
-            .header { font-size: 14px; margin-top: 50px;}
-            .about { font-size: 12px; text-align: justify; }
-            .personal-skills { font-size: 12px; }
+            .city { text-align: center; margin: 5px 0 0 0; font-size: 11px; }
+            .header { font-size: 14px; margin-top: 50px; font-weight: 600; }
+            .about { font-size: 12px; }
             .contact-icon { position: absolute; font-size: 18px; margin-left: -5px; }
             .contact-icon-small { position: absolute; font-size: 14px; padding: 4px; margin-left: -5px; }
             .contact-cont { width: 100%; }
             .contact { font-size: 12px; margin: 10px 0 4px 30px; }
 
             #profile-pic { width: 110px; border: 1px solid white; border-radius: 50%; display: block; margin: auto;
-                -webkit-filter: grayscale(100%); background-color: #fff; margin-top: 70px; }
+                -webkit-filter: grayscale(100%); background-color: #fff; margin-top: 70px; box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15); }
 
-            ul { padding: 0; margin-left: 11px; list-style: none}
+            ul { padding: 0; margin-left: 11px; list-style: none; }
             li { padding-left: 23px; border-left: 1px solid rgba(0,0,0, 0.1); padding-bottom: 20px; }
             li:before { content: ' '; width: 9px; height: 9px; background-color: #139cca; position: absolute; border-radius: 50%; margin-left: -30px;
                 border: 2px solid #eee; }
@@ -53,7 +47,7 @@
             li span:first-child { padding-top: 0; }
 
             .company { font-size: 14px; font-weight: 600; line-height: 14px;}
-            .position { font-size: 11px; line-height: 16px; }
+            .position { font-size: 11px; line-height: 16px; color: #7a7677; }
             .time-frame { font-size: 11px; line-height: 14px; }
         </style>
     </head>
@@ -61,34 +55,35 @@
         <div class="container">
             <div id="left-side" class="side">
                 <img id="profile-pic" src="profile.jpg" alt="Profile">
-                <p class="name soft-gray">KRISZTIAN NAGY</p>
-                <p class="title soft-gray">Senior Frontend Developer</p>
-                <br/>
-                <i class="material-icons blue pin">pin_drop</i> <p class="city soft-gray">Budapest, HU</p>
-                <p class="header soft-gray">ABOUT ME</p>
-                <p class="about soft-gray">
-                    I am a 29 years old front end developer with 8+ years of experience from sitebuilding
+                <p class="name">KRISZTIAN NAGY</p>
+                <p class="title">Senior Frontend Developer</p>
+                <p class="header">ABOUT ME</p>
+                <p class="about">
+                    I am a 30 years old front end developer with 9+ years of experience from sitebuilding
                     to full stack development and a bit of team leading.
                     <br/><br/>
-                    Currenty fancy these: React, Unity3D and Golang.
-                </p>
-                <p class="header soft-gray">PERSONAL SKILLS</p>
-                <p class="personal-skills soft-gray">
                     Team player, excellent in communication, problem solver, enthusiastic mind.
                     <br/><br/>
                     A really kind techical interviewer.
+                    <br/><br/>
+                    Currenty fancy these: <br/>React, Unity3D and Golang.
                 </p>
 
-                <p class="header soft-gray">CONTACT</p>
+                <p class="header">CONTACT</p>
 
-                <i class="material-icons soft-gray contact-icon" style="margin-top: -5px">email</i><p class="contact soft-gray">chrisakakay@gmail.com</p>
-                <i class="material-icons soft-gray contact-icon">phone</i><p class="contact soft-gray">+36705109515</p>
-                <i class="icon-skype soft-gray contact-icon-small"></i><p class="contact soft-gray">krisztian_nagy_1989</p>
-                <i class="icon-linkedin-rect soft-gray contact-icon-small"></i><p class="contact soft-gray">linkedin.com/in/chrisakakay</p>
-                <i class="icon-github soft-gray contact-icon-small"></i><p class="contact soft-gray">github.com/chrisakakay</p>
+                <i class="material-icons contact-icon" style="margin-top: -5px">email</i>
+                <p class="contact">chrisakakay@gmail.com</p>
+                <i class="material-icons contact-icon">phone</i>
+                <p class="contact">+36705109515</p>
+                <i class="icon-skype contact-icon-small"></i>
+                <p class="contact">krisztian_nagy_1989</p>
+                <i class="icon-linkedin-rect contact-icon-small"></i>
+                <p class="contact">linkedin.com/in/chrisakakay</p>
+                <i class="icon-github contact-icon-small"></i>
+                <p class="contact">github.com/chrisakakay</p>
             </div>
             <div id="right-side" class="side">
-                <h3 class="blue"><span class="icon-container"><i class="material-icons md-light">work</i></span>WORK EXPERIENCE</h3>
+                <h3><span class="icon-container"><i class="material-icons l">work</i></span>WORK EXPERIENCE</h3>
                 <ul>
                     <li>
                         <span class="company">VODAFONE SHARED SERVICES BUDAPEST</span>
@@ -112,17 +107,17 @@
                     </li>
                 </ul>
 
-                <h3 class="blue"><span class="icon-container"><i class="material-icons md-light">assessment</i></span>PROFESSIONAL SKILLS</h3>
+                <h3><span class="icon-container"><i class="material-icons l">assessment</i></span>PROFESSIONAL SKILLS</h3>
                 <h4>Languages</h4>
-                <p class="list">HTML5, CSS3, JavaScript, Golang, Ruby, Python, C#, Java</p>
+                <p>HTML5, CSS3, JavaScript, Golang, Ruby, Python, C#, Java</p>
                 <h4>Technologies</h4>
-                <p class="list">React, Preact, Node.js, jQuery, Electron, Vue, Meteor.js, Unity3D, Ruby on Rails, Selenium, Jasmine, Mocha, Git (Github, Gitlab), SCSS/SASS, Webpack, Rollup, Parcel, Gulp, Grunt React Native</p>
+                <p>React, StyledComponents, Preact, Node.js, jQuery, Electron, Vue, Meteor.js, Unity3D, Ruby on Rails, Selenium, Jasmine, Mocha, Git (Github, Gitlab), SCSS/SASS, Webpack, Rollup, Parcel, Gulp, Grunt React Native</p>
                 <h4>Methodologies</h4>
-                <p class="list">Scrum, Agile, Kanban, TDD, BDD</p>
+                <p>Scrum, Agile, Kanban, TDD, BDD</p>
                 <h4>Others</h4>
-                <p class="list">Automated tests, Responsive design, Adobe Photoshop, Sublime, Jira, Firebase</p>
+                <p>Automated tests, Responsive design, Adobe Photoshop, Sublime, Jira, Firebase</p>
 
-                <h3 class="blue"><span class="icon-container"><i class="material-icons md-light">lightbulb_outline</i></span>EDUCATION</h3>
+                <h3><span class="icon-container"><i class="material-icons l">lightbulb_outline</i></span>EDUCATION</h3>
                 <ul>
                     <li>
                         <span class="company">EOTVOS LORAND UNIVERSITY</span>
